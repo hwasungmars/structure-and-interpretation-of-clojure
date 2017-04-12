@@ -6,4 +6,5 @@ jobs:
       - image: clojure:latest
     steps:
       - checkout
+      - run: lein check
       - run: lein test
